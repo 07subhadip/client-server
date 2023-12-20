@@ -12,7 +12,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #777777;
+    background-color: #0cb6dc;
 }
 #SearchBox{
     display: flex;
@@ -24,18 +24,22 @@ body{
     border-radius: 10px;
     background-color: #313131;
     color: white;
+    margin-bottom: 250px;
 }
 #SearchBox h1{
+    font-family: "dm sans";
     font-size: 40px;
 }
 #SearchBox input{
     width: 300px;
+    font-family: "dm sans";
     font-size: 20px;
     margin: 20px;
     padding: 11px;
     border: none;
     border-radius: 7px;
     outline: none;
+    text-align: center;
 }
 #SearchBox button{
     width: 200px;
@@ -44,5 +48,7 @@ body{
     font-size: 20px;
     padding: 7px 27px;
     border-radius: 50px;
-    color: darkblue
+    color: rgb(81, 0, 255);
+    background-color:rgb(202, 175, 186);
+    font-weight: 400px;
 }
