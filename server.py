@@ -41,15 +41,15 @@ def query_database(studentid):
 def index():
     return render_template('index.html')
 
-@app.route('/api/data', methods=['GET'])
+@app.route('/search', methods=['GET'])
 def get_data():
     user_data = ""
     studentid = request.args.get('id')
     user_data = query_database(studentid)
     if user_data != None:
-        data = "Id:"+str(user_data[0])+"<br>"+"Name: "+user_data[1]+"<br>"+"Roll: "+str(user_data[4])+"<br>"+"Marks: "+str(user_data[2])+"<br>"+"Address: "+user_data[3]
+        data = "Id:"+str(user_data[0])+"<br>"+"Name: "+user_data[1]+"<br>"+"Roll: "+str(user_data[4])+"<br>"+"Persentage: "+str(user_data[2])+"<br>"+"Locality: "+user_data[3]
     else:
-        data = "Not Found!"
+        data = "No DATA!"
     return jsonify(data=data)
 
 if __name__ == '__main__':
