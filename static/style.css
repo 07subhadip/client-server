@@ -18,11 +18,10 @@ body{
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 300px;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background-color: #313131;
+    background-color: #3b3445;
     color: white;
     margin-bottom: 250px;
 }
