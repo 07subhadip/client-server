@@ -12,6 +12,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #777777;
 }
 #SearchBox{
     display: flex;
@@ -20,18 +21,28 @@ body{
     height: 300px;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    border-radius: 10px;
+    background-color: #313131;
+    color: white;
 }
 #SearchBox h1{
     font-size: 40px;
 }
 #SearchBox input{
     width: 300px;
-    margin: 30px;
-    padding: 20px;
+    font-size: 20px;
+    margin: 20px;
+    padding: 11px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
 }
 #SearchBox button{
     width: 200px;
+    outline: none;
+    border: none;
     font-size: 20px;
     padding: 7px 27px;
+    border-radius: 50px;
+    color: darkblue
 }
