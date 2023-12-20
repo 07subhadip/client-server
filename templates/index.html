@@ -7,11 +7,28 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
+    <div class="heading"><h1>Student</h1><h1>Search</h1></div>
     <div id="SearchBox">
-        <h1>Student Data</h1>
-        <input placeholder="Search ID" type="text">
-        <Button>Search</Button>
-        <span id="result"></span>
+        <h1>Search Here</h1>
+        <input onkeypress="check(event)" id="studentsearch" placeholder="Search ID" type="text">
+        <Button onclick="fetchdata()">Search</Button>
+        <span id="result">Result</span>
     </div>
 </body>
+<script>
+    function check(e){
+      if(e.keyCode==13){
+        fetchdata();
+      }
+    }
+     function fetchdata() {
+        var id = document.getElementById('studentsearch').value;
+        fetch('/search?id='+id)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('result').innerHTML = data.data;
+            })
+            .catch(error => console.error('Error:', error));
+    }
+</script>
 </html>

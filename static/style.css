@@ -12,30 +12,33 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #777777;
+    background-color: #332d2d;
 }
 #SearchBox{
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 300px;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background-color: #313131;
+    background-color: #3b3445;
     color: white;
+    padding: 20px 0;
 }
 #SearchBox h1{
     font-size: 40px;
 }
 #SearchBox input{
     width: 300px;
+    
     font-size: 20px;
     margin: 20px;
     padding: 11px;
     border: none;
     border-radius: 7px;
     outline: none;
+    background-color: #6b6b6b;
+    color: aliceblue;
 }
 #SearchBox button{
     width: 200px;
@@ -44,5 +47,33 @@ body{
     font-size: 20px;
     padding: 7px 27px;
     border-radius: 50px;
-    color: darkblue
+    color: white;
+    background-color: crimson;
+
+}
+#SearchBox span{
+    font-size: 20px;
+    font-family: "dm sans";
+    margin: 10px;
+    padding: 20px;
+    width:200px;
+    background-color: #575775;
+    border-radius: 7px;
+}
+
+.heading{
+    display: flex;
+    position: absolute;
+    top:20px;
+    left: 20px;
+    font-size: 30px;
+
+}
+.heading h1:nth-child(1){
+    margin-left: 7px;
+    color: crimson;
+}
+.heading h1:nth-child(2){
+    margin-left: 17px;
+    color: white;
 }
